@@ -1,0 +1,76 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousal-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousal-container button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.carousal-container button img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.carousal-container button img:hover {
+  opacity: 1;
+}
+
+.carousal-content {
+  width: 70%;
+  height: 500px;
+  background-image: url("../img/img01.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.prevBtn {
+  margin-right: 2rem;
+}
+
+.nextBtn {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 1070px) {
+  .carousal-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .prevBtn {
+    margin-right: 2%;
+  }
+
+  .nextBtn {
+    margin-left: 2%;
+  }
+}
